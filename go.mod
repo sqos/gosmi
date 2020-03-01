@@ -1,4 +1,4 @@
-module github.com/sleepinggenius2/gosmi
+module github.com/sqos/gosmi
 
 go 1.13
 

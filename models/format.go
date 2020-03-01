@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/sqos/gosmi/types"
 )
 
 type Format byte

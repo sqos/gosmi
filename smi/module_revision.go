@@ -3,8 +3,8 @@ package smi
 import (
 	"unsafe"
 
-	"github.com/sleepinggenius2/gosmi/smi/internal"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/sqos/gosmi/smi/internal"
+	"github.com/sqos/gosmi/types"
 )
 
 // SmiRevision *smiGetFirstRevision(SmiModule *smiModulePtr)

@@ -8,8 +8,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/sleepinggenius2/gosmi/parser"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/sqos/gosmi/parser"
+	"github.com/sqos/gosmi/types"
 )
 
 type Module struct {

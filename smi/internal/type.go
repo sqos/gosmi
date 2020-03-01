@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/sleepinggenius2/gosmi/parser"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/sqos/gosmi/parser"
+	"github.com/sqos/gosmi/types"
 )
 
 type Type struct {

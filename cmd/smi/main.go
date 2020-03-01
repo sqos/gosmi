@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/sqos/gosmi/types"
 	"os"
 	"strings"
 
@@ -77,7 +78,15 @@ func Exit() {
 }
 
 func Subtree(oid string) {
-	node, err := gosmi.GetNode(oid)
+	node, err := func() (gosmi.SmiNode, error) {
+		if toid, err := types.OidFromString(oid); err == nil {
+			fmt.Println("toid", toid)
+			return gosmi.GetNodeByOID(toid)
+		} else {
+			fmt.Println("oid", oid)
+			return gosmi.GetNode(oid)
+		}
+	}()
 	if err != nil {
 		fmt.Printf("Subtree Error: %s\n", err)
 		return

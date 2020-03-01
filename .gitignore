@@ -2,6 +2,8 @@
 *.o
 *.a
 *.so
+cmd/smi/smi
+cmd/parse/parse
 
 # Folders
 _obj

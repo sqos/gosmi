@@ -7,7 +7,7 @@ import (
 )
 
 func Init() {
-	if !smi.Init("gosmi") {
+	if !smi.Init() {
 		panic("Failed to initialize")
 	}
 }

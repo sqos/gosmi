@@ -58,7 +58,7 @@ func Init(tag ...string) bool {
 	}
 
 	// Use SMIPATH environment variable, if set
-	SetPath(os.Getenv("SMIPATH"))
+	SetPath(os.Getenv("SMIPATH") + string(os.PathListSeparator))
 
 	return true
 }
